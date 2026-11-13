@@ -27,8 +27,8 @@ jobs:
 
       - name: Inyectar Secrets en el HTML
         run: |
-          sed -i 's/TELEGRAM_BOT_TOKEN/${{ secrets.TG_TOKEN }}/g' index.html
-          sed -i 's/TELEGRAM_CHAT_ID/${{ secrets.TG_CHAT }}/g' index.html
+          sed -i 's/TELEGRAM_BOT_TOKEN/${{ secrets.TELEGRAM_BOT_TOKEN }}/g' index.html
+          sed -i 's/TELEGRAM_CHAT_ID/${{ secrets.TELEGRAM_CHAT_ID }}/g' index.html
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
